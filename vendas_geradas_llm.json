@@ -1,0 +1,602 @@
+[
+    {
+        "data": "01-01-2023",
+        "produto": "Cimento",
+        "quantidade": 150,
+        "preco_unitario": 30,
+        "margem líquida": 40,
+        "valor_total": 4500
+    },
+    {
+        "data": "02-01-2023",
+        "produto": "Areia",
+        "quantidade": 80,
+        "preco_unitario": 20,
+        "margem líquida": 25,
+        "valor_total": 1600
+    },
+    {
+        "data": "03-01-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 120,
+        "preco_unitario": 15,
+        "margem líquida": 30,
+        "valor_total": 1800
+    },
+    {
+        "data": "04-01-2023",
+        "produto": "Tijolo",
+        "quantidade": 200,
+        "preco_unitario": 10,
+        "margem líquida": 50,
+        "valor_total": 2000
+    },
+    {
+        "data": "05-01-2023",
+        "produto": "Reboco",
+        "quantidade": 100,
+        "preco_unitario": 25,
+        "margem líquida": 35,
+        "valor_total": 2500
+    },
+    {
+        "data": "06-01-2023",
+        "produto": "Cimento",
+        "quantidade": 60,
+        "preco_unitario": 35,
+        "margem líquida": 45,
+        "valor_total": 2100
+    },
+    {
+        "data": "07-01-2023",
+        "produto": "Areia",
+        "quantidade": 150,
+        "preco_unitario": 15,
+        "margem líquida": 20,
+        "valor_total": 2250
+    },
+    {
+        "data": "08-01-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 90,
+        "preco_unitario": 20,
+        "margem líquida": 30,
+        "valor_total": 1800
+    },
+    {
+        "data": "09-01-2023",
+        "produto": "Tijolo",
+        "quantidade": 130,
+        "preco_unitario": 10,
+        "margem líquida": 50,
+        "valor_total": 1300
+    },
+    {
+        "data": "10-01-2023",
+        "produto": "Reboco",
+        "quantidade": 110,
+        "preco_unitario": 30,
+        "margem líquida": 25,
+        "valor_total": 3300
+    },
+    {
+        "data": "11-01-2023",
+        "produto": "Cimento",
+        "quantidade": 170,
+        "preco_unitario": 25,
+        "margem líquida": 40,
+        "valor_total": 4250
+    },
+    {
+        "data": "12-01-2023",
+        "produto": "Areia",
+        "quantidade": 40,
+        "preco_unitario": 20,
+        "margem líquida": 30,
+        "valor_total": 800
+    },
+    {
+        "data": "13-01-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 110,
+        "preco_unitario": 15,
+        "margem líquida": 45,
+        "valor_total": 1650
+    },
+    {
+        "data": "14-01-2023",
+        "produto": "Tijolo",
+        "quantidade": 190,
+        "preco_unitario": 10,
+        "margem líquida": 50,
+        "valor_total": 1900
+    },
+    {
+        "data": "15-01-2023",
+        "produto": "Reboco",
+        "quantidade": 75,
+        "preco_unitario": 25,
+        "margem líquida": 20,
+        "valor_total": 1875
+    },
+    {
+        "data": "16-01-2023",
+        "produto": "Cimento",
+        "quantidade": 100,
+        "preco_unitario": 30,
+        "margem líquida": 35,
+        "valor_total": 3000
+    },
+    {
+        "data": "17-01-2023",
+        "produto": "Areia",
+        "quantidade": 150,
+        "preco_unitario": 10,
+        "margem líquida": 25,
+        "valor_total": 1500
+    },
+    {
+        "data": "18-01-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 120,
+        "preco_unitario": 20,
+        "margem líquida": 30,
+        "valor_total": 2400
+    },
+    {
+        "data": "19-01-2023",
+        "produto": "Tijolo",
+        "quantidade": 30,
+        "preco_unitario": 15,
+        "margem líquida": 40,
+        "valor_total": 450
+    },
+    {
+        "data": "20-01-2023",
+        "produto": "Reboco",
+        "quantidade": 160,
+        "preco_unitario": 20,
+        "margem líquida": 50,
+        "valor_total": 3200
+    },
+    {
+        "data": "21-01-2023",
+        "produto": "Cimento",
+        "quantidade": 110,
+        "preco_unitario": 35,
+        "margem líquida": 20,
+        "valor_total": 3850
+    },
+    {
+        "data": "22-01-2023",
+        "produto": "Areia",
+        "quantidade": 170,
+        "preco_unitario": 10,
+        "margem líquida": 30,
+        "valor_total": 1700
+    },
+    {
+        "data": "23-01-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 80,
+        "preco_unitario": 25,
+        "margem líquida": 35,
+        "valor_total": 2000
+    },
+    {
+        "data": "24-01-2023",
+        "produto": "Tijolo",
+        "quantidade": 200,
+        "preco_unitario": 12,
+        "margem líquida": 50,
+        "valor_total": 2400
+    },
+    {
+        "data": "25-01-2023",
+        "produto": "Reboco",
+        "quantidade": 40,
+        "preco_unitario": 30,
+        "margem líquida": 25,
+        "valor_total": 1200
+    },
+    {
+        "data": "26-01-2023",
+        "produto": "Cimento",
+        "quantidade": 90,
+        "preco_unitario": 28,
+        "margem líquida": 40,
+        "valor_total": 2520
+    },
+    {
+        "data": "27-01-2023",
+        "produto": "Areia",
+        "quantidade": 110,
+        "preco_unitario": 18,
+        "margem líquida": 30,
+        "valor_total": 1980
+    },
+    {
+        "data": "28-01-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 130,
+        "preco_unitario": 22,
+        "margem líquida": 35,
+        "valor_total": 2860
+    },
+    {
+        "data": "29-01-2023",
+        "produto": "Tijolo",
+        "quantidade": 160,
+        "preco_unitario": 9,
+        "margem líquida": 45,
+        "valor_total": 1440
+    },
+    {
+        "data": "30-01-2023",
+        "produto": "Reboco",
+        "quantidade": 70,
+        "preco_unitario": 29,
+        "margem líquida": 20,
+        "valor_total": 2030
+    },
+    {
+        "data": "31-01-2023",
+        "produto": "Cimento",
+        "quantidade": 140,
+        "preco_unitario": 27,
+        "margem líquida": 30,
+        "valor_total": 3780
+    },
+    {
+        "data": "01-02-2023",
+        "produto": "Areia",
+        "quantidade": 50,
+        "preco_unitario": 19,
+        "margem líquida": 35,
+        "valor_total": 950
+    },
+    {
+        "data": "02-02-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 100,
+        "preco_unitario": 24,
+        "margem líquida": 40,
+        "valor_total": 2400
+    },
+    {
+        "data": "03-02-2023",
+        "produto": "Tijolo",
+        "quantidade": 120,
+        "preco_unitario": 11,
+        "margem líquida": 25,
+        "valor_total": 1320
+    },
+    {
+        "data": "04-02-2023",
+        "produto": "Reboco",
+        "quantidade": 130,
+        "preco_unitario": 22,
+        "margem líquida": 30,
+        "valor_total": 2860
+    },
+    {
+        "data": "05-02-2023",
+        "produto": "Cimento",
+        "quantidade": 160,
+        "preco_unitario": 29,
+        "margem líquida": 20,
+        "valor_total": 4640
+    },
+    {
+        "data": "06-02-2023",
+        "produto": "Areia",
+        "quantidade": 140,
+        "preco_unitario": 15,
+        "margem líquida": 30,
+        "valor_total": 2100
+    },
+    {
+        "data": "07-02-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 150,
+        "preco_unitario": 20,
+        "margem líquida": 35,
+        "valor_total": 3000
+    },
+    {
+        "data": "08-02-2023",
+        "produto": "Tijolo",
+        "quantidade": 90,
+        "preco_unitario": 12,
+        "margem líquida": 50,
+        "valor_total": 1080
+    },
+    {
+        "data": "09-02-2023",
+        "produto": "Reboco",
+        "quantidade": 50,
+        "preco_unitario": 27,
+        "margem líquida": 25,
+        "valor_total": 1350
+    },
+    {
+        "data": "10-02-2023",
+        "produto": "Cimento",
+        "quantidade": 180,
+        "preco_unitario": 20,
+        "margem líquida": 30,
+        "valor_total": 3600
+    },
+    {
+        "data": "11-02-2023",
+        "produto": "Areia",
+        "quantidade": 100,
+        "preco_unitario": 30,
+        "margem líquida": 40,
+        "valor_total": 3000
+    },
+    {
+        "data": "12-02-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 110,
+        "preco_unitario": 28,
+        "margem líquida": 35,
+        "valor_total": 3080
+    },
+    {
+        "data": "13-02-2023",
+        "produto": "Tijolo",
+        "quantidade": 160,
+        "preco_unitario": 14,
+        "margem líquida": 25,
+        "valor_total": 2240
+    },
+    {
+        "data": "14-02-2023",
+        "produto": "Reboco",
+        "quantidade": 90,
+        "preco_unitario": 20,
+        "margem líquida": 30,
+        "valor_total": 1800
+    },
+    {
+        "data": "15-02-2023",
+        "produto": "Cimento",
+        "quantidade": 150,
+        "preco_unitario": 10,
+        "margem líquida": 45,
+        "valor_total": 1500
+    },
+    {
+        "data": "16-02-2023",
+        "produto": "Areia",
+        "quantidade": 160,
+        "preco_unitario": 15,
+        "margem líquida": 30,
+        "valor_total": 2400
+    },
+    {
+        "data": "17-02-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 50,
+        "preco_unitario": 20,
+        "margem líquida": 35,
+        "valor_total": 1000
+    },
+    {
+        "data": "18-02-2023",
+        "produto": "Tijolo",
+        "quantidade": 130,
+        "preco_unitario": 13,
+        "margem líquida": 40,
+        "valor_total": 1690
+    },
+    {
+        "data": "19-02-2023",
+        "produto": "Reboco",
+        "quantidade": 140,
+        "preco_unitario": 25,
+        "margem líquida": 20,
+        "valor_total": 3500
+    },
+    {
+        "data": "20-02-2023",
+        "produto": "Cimento",
+        "quantidade": 120,
+        "preco_unitario": 35,
+        "margem líquida": 30,
+        "valor_total": 4200
+    },
+    {
+        "data": "21-02-2023",
+        "produto": "Areia",
+        "quantidade": 110,
+        "preco_unitario": 22,
+        "margem líquida": 25,
+        "valor_total": 2420
+    },
+    {
+        "data": "22-02-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 90,
+        "preco_unitario": 16,
+        "margem líquida": 35,
+        "valor_total": 1440
+    },
+    {
+        "data": "23-02-2023",
+        "produto": "Tijolo",
+        "quantidade": 180,
+        "preco_unitario": 12,
+        "margem líquida": 40,
+        "valor_total": 2160
+    },
+    {
+        "data": "24-02-2023",
+        "produto": "Reboco",
+        "quantidade": 130,
+        "preco_unitario": 19,
+        "margem líquida": 30,
+        "valor_total": 2470
+    },
+    {
+        "data": "25-02-2023",
+        "produto": "Cimento",
+        "quantidade": 150,
+        "preco_unitario": 28,
+        "margem líquida": 25,
+        "valor_total": 4200
+    },
+    {
+        "data": "26-02-2023",
+        "produto": "Areia",
+        "quantidade": 170,
+        "preco_unitario": 15,
+        "margem líquida": 30,
+        "valor_total": 2550
+    },
+    {
+        "data": "27-02-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 60,
+        "preco_unitario": 22,
+        "margem líquida": 35,
+        "valor_total": 1320
+    },
+    {
+        "data": "28-02-2023",
+        "produto": "Tijolo",
+        "quantidade": 90,
+        "preco_unitario": 14,
+        "margem líquida": 20,
+        "valor_total": 1260
+    },
+    {
+        "data": "01-03-2023",
+        "produto": "Reboco",
+        "quantidade": 50,
+        "preco_unitario": 30,
+        "margem líquida": 40,
+        "valor_total": 1500
+    },
+    {
+        "data": "02-03-2023",
+        "produto": "Cimento",
+        "quantidade": 200,
+        "preco_unitario": 5,
+        "margem líquida": 50,
+        "valor_total": 1000
+    },
+    {
+        "data": "03-03-2023",
+        "produto": "Areia",
+        "quantidade": 110,
+        "preco_unitario": 20,
+        "margem líquida": 30,
+        "valor_total": 2200
+    },
+    {
+        "data": "04-03-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 140,
+        "preco_unitario": 18,
+        "margem líquida": 25,
+        "valor_total": 2520
+    },
+    {
+        "data": "05-03-2023",
+        "produto": "Tijolo",
+        "quantidade": 180,
+        "preco_unitario": 12,
+        "margem líquida": 20,
+        "valor_total": 2160
+    },
+    {
+        "data": "06-03-2023",
+        "produto": "Reboco",
+        "quantidade": 160,
+        "preco_unitario": 25,
+        "margem líquida": 30,
+        "valor_total": 4000
+    },
+    {
+        "data": "07-03-2023",
+        "produto": "Cimento",
+        "quantidade": 50,
+        "preco_unitario": 40,
+        "margem líquida": 45,
+        "valor_total": 2000
+    },
+    {
+        "data": "08-03-2023",
+        "produto": "Areia",
+        "quantidade": 100,
+        "preco_unitario": 15,
+        "margem líquida": 20,
+        "valor_total": 1500
+    },
+    {
+        "data": "09-03-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 90,
+        "preco_unitario": 20,
+        "margem líquida": 25,
+        "valor_total": 1800
+    },
+    {
+        "data": "10-03-2023",
+        "produto": "Tijolo",
+        "quantidade": 200,
+        "preco_unitario": 10,
+        "margem líquida": 50,
+        "valor_total": 2000
+    },
+    {
+        "data": "11-03-2023",
+        "produto": "Reboco",
+        "quantidade": 130,
+        "preco_unitario": 27,
+        "margem líquida": 30,
+        "valor_total": 3510
+    },
+    {
+        "data": "12-03-2023",
+        "produto": "Cimento",
+        "quantidade": 70,
+        "preco_unitario": 30,
+        "margem líquida": 45,
+        "valor_total": 2100
+    },
+    {
+        "data": "13-03-2023",
+        "produto": "Areia",
+        "quantidade": 50,
+        "preco_unitario": 19,
+        "margem líquida": 25,
+        "valor_total": 950
+    },
+    {
+        "data": "14-03-2023",
+        "produto": "Bloco de Concreto",
+        "quantidade": 130,
+        "preco_unitario": 22,
+        "margem líquida": 35,
+        "valor_total": 2860
+    },
+    {
+        "data": "15-03-2023",
+        "produto": "Tijolo",
+        "quantidade": 40,
+        "preco_unitario": 15,
+        "margem líquida": 20,
+        "valor_total": 600
+    },
+    {
+        "data": "16-03-2023",
+        "produto": "Reboco",
+        "quantidade": 50,
+        "preco_unitario": 30,
+        "margem líquida": 30,
+        "valor_total": 1500
+    }
+]
