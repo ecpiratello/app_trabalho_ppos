@@ -103,7 +103,7 @@ def ask_questions_about_json(llm_client, file_path):
             {"role": "system", "content": """Você, como analista de dados, coleta, organiza e interpreta grandes volumes de informações para apoiar decisões estratégicas. 
             Utiliza ferramentas de análise estatística, programação e visualização de dados para identificar padrões e tendências. Além das habilidades técnicas, é essencial
             que você tenha pensamento crítico, capacidade de resolver problemas e saiba comunicar os resultados de forma clara, ajudando na definição de estratégias e na 
-            melhoria de processos. Responda às perguntas usando o contexto das interações anteriores."""},
+            melhoria de processos. Responda às perguntas e use quando necessário ocontexto das interações anteriores."""},
             {"role": "user", "content": f"Aqui está o conteúdo de um JSON: {json_content}. Responda às perguntas com base exclusivamente neste JSON. Não use o formato JSON nas respostas"}
         ]
 
