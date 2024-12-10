@@ -20,10 +20,11 @@ guard = Guard().use(ValidJson, on_fail="exception")
 
 def generate_json_file_with_llm(file_path):
     """
-    Gera um arquivo JSON fictício diretamente utilizando a LLM.
+    Gera um arquivo JSON fictício diretamente utilizando a LLM que representa as vendas de uma empresa de material de construção.
     """
     prompt = """
-    Gere um JSON contendo exatamente 100 objetos em uma lista. 
+    Gere um JSON de vendas de uma empresa de material de construção
+    contendo exatamente 20 objetos em uma lista. 
     Não inclua explicações, formatações extras ou aspas adicionais.
     O JSON deve seguir o seguinte formato:
     [
@@ -33,6 +34,8 @@ def generate_json_file_with_llm(file_path):
             "quantidade": inteiro entre 10 e 200,
             "preco_unitario": inteiro entre 5 e 50,
             "margem líquida": percentual entre 0 e 100,
+            "região": "Norte|Nordeste|Centro-Oeste|Sudeste|Sul",
+            "tipo_de_venda": "online|presencial|telefonica",
             "valor_total": quantidade * preco_unitario
         },
         ...
@@ -43,14 +46,14 @@ def generate_json_file_with_llm(file_path):
         # Obter a resposta da LLM
         response = client.chat.completions.create(
             model="gpt-4o-mini",
-            messages=[{"role": "system", "content": "Você é um assistente que retorna dados formatados corretamente."},
+            messages=[{"role": "system", "content": "Você é um assistente de dados, que retorna dados formatados corretamente."},
                       {"role": "user", "content": prompt}]
         ).choices[0].message.content.strip()
 
         # Forçar um erro de formato no registro 5
         #response_split = response.splitlines()
         #for i, line in enumerate(response_split):
-        #    if "\"produto\":" in line and i >= 5:  # Localiza o registro 5 pelo índice
+        #   if "\"produto\":" in line and i >= 5:  # Localiza o registro 5 pelo índice
         #        response_split[i] = line.replace(",", ",,,,")  # Introduz erro ao adicionar vírgulas extras
         #        break
         #response = "\n".join(response_split)
@@ -87,33 +90,42 @@ def validate_json_file_with_guardrails(file_path):
 
 def ask_questions_about_json(llm_client, file_path):
     """
-    Permite que o usuário faça perguntas sobre o conteúdo do JSON.
+    Permite que o usuário faça perguntas sobre o conteúdo do JSON com continuidade de contexto.
     """
     try:
         with open(file_path, "r", encoding="utf-8") as file:
             json_content = file.read()
 
-        print("\nFaça perguntas sobre o JSON (digite 'sair' para encerrar):")
+        print("\nFaça perguntas sobre vendas e mercado (digite 'sair' para encerrar):")
+
+        # Inicializar o histórico de mensagens
+        conversation_history = [
+            {"role": "system", "content": """Você, como analista de dados, coleta, organiza e interpreta grandes volumes de informações para apoiar decisões estratégicas. 
+            Utiliza ferramentas de análise estatística, programação e visualização de dados para identificar padrões e tendências. Além das habilidades técnicas, é essencial
+            que você tenha pensamento crítico, capacidade de resolver problemas e saiba comunicar os resultados de forma clara, ajudando na definição de estratégias e na 
+            melhoria de processos. Responda às perguntas usando o contexto das interações anteriores."""},
+            {"role": "user", "content": f"Aqui está o conteúdo de um JSON: {json_content}. Responda às perguntas com base exclusivamente neste JSON. Não use o formato JSON nas respostas"}
+        ]
+
         while True:
             user_question = input("Pergunta: ")
             if user_question.lower() == "sair":
                 print("Encerrando análise.")
                 break
 
-            prompt = f"""
-            Aqui está o conteúdo de um JSON: {json_content}.
-            Responda à seguinte pergunta com base exclusivamente no JSON fornecido. 
-            Não responda nehuma pergunta que não tenha relação com o conteúdo do JSON.
-            Caso uma pergunta fora deste contexto seja feita, responda "Só respondo 
-            perguntas sobre o arquivo de vendas": {user_question}
-            """
+            # Adicionar a pergunta do usuário ao histórico
+            conversation_history.append({"role": "user", "content": user_question})
+
             try:
-                # Obter a resposta da LLM
+                # Obter a resposta da LLM com o histórico completo
                 response = llm_client.chat.completions.create(
                     model="gpt-4o-mini",
-                    messages=[{"role": "system", "content": "Você é um assistente que analisa e responde com base em JSON. Você responde as perguntas em formato de texto corrido e não utiliza o formato JSON nas respostas"},
-                              {"role": "user", "content": prompt}]
+                    messages=conversation_history
                 ).choices[0].message.content.strip()
+
+                # Adicionar a resposta ao histórico
+                conversation_history.append({"role": "assistant", "content": response})
+
                 print(f"Resposta: {response}")
             except Exception as e:
                 print(f"Erro ao processar a pergunta: {e}")
